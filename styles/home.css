@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+
+#main-container {
+    background-color: aquamarine;
+    min-height: 100vh;
+}
+
+#menu {
+    background-color: blue;
+    height: 100vh;
+}
+
+main {
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+footer {
+    background-color: blanchedalmond;
+}
