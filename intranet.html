@@ -10,9 +10,21 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="./styles/menu.css" />
-    <link rel="stylesheet" href="./styles/dudas.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/intranet.css">
+
     <title>Conexion a Intranet</title>
   </head>
 
@@ -59,13 +71,15 @@
           </nav>
         </header>
         <div class="col-7 col-sm-9 col-xl-10" id="main-area">
-          <div class="container-fluid">
-            <main class="row" id="formulario">
-              <div class="title">
-                <h2>Intranet</h2>
-              </div>
-              <div class="message">
-                <p>Ingresa aca para poder acceder al intranet del Instituto.</p>
+          <main class="container-fluid" id="formulario">
+            <div class="row">
+              <div class="col encabezado">
+                <div class="title">
+                  <h2>Intranet</h2>
+                </div>
+                <div class="message">
+                  <p>Ingresa aca para poder acceder al intranet del Instituto.</p>
+                </div>
               </div>
               <form action="">
                 <div class="form-group">
@@ -90,8 +104,53 @@
                 </div>
                 <button class="btn btn-primary" type="submit">Enviar</button>
               </form>
-            </main>
-            <footer class="row"></footer>
+            </div>
+          </main>
+
+            <footer class="container-fluid footer">
+              <div class="row">
+                <div class="col" id="contact">
+                  <h4>Contacto</h4>
+                  <ul>
+                    <li>
+                      <a href="mailto:coordinacion@iptelepresente.cl"
+                        >coordinacion@iptelepresente.cl</a
+                      >
+                    </li>
+                    <li>+56 9 1234 5678</li>
+                    <li>
+                      <a
+                        href="https://www.google.com/maps/place/Duoc+UC:+Antonio+Varas/@-33.4331101,-70.6177538,17z/data=!3m1!4b1!4m5!3m4!1s0x9662cf7b8af466fd:0xc8fd2d768e783103!8m2!3d-33.4331101!4d-70.6155651"
+                        ><p>Antonio Varas 666</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col" id="cert">
+                  <h4>Validacion de certificados</h4>
+                  <ul>
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                    >
+                      Ingresar certificado
+                    </button>
+                  </ul>
+                </div>
+                <div class="col" id="redesSociales">
+                  <h4>Redes sociales</h4>
+                  <div class="social-links">
+                    <ul>
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                      <a href=""><i class="fab fa-instagram"></i></a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </footer>
           </div>
         </div>
       </div>

@@ -10,10 +10,22 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
     <link rel="stylesheet" href="./styles/home.css" />
     <link rel="stylesheet" href="./styles/menu.css" />
     <link rel="stylesheet" href="./styles/dudas.css" />
-    <link rel="icon" type="image/x-icon" href="./static/images/pngegg.png">
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <link rel="icon" type="image/x-icon" href="./static/images/pngegg.png" />
     <title>Envianos tus dudas!</title>
   </head>
 
@@ -23,7 +35,13 @@
         <header class="col-5 col-sm-3 col-xl-2">
           <nav id="menu" class="navbar bg-dark">
             <a class="navbar-brand" href="">
-              <img id="logo" src="./static/images/pngegg.png" width="110" height="110" alt="">
+              <img
+                id="logo"
+                src="./static/images/pngegg.png"
+                width="110"
+                height="110"
+                alt=""
+              />
             </a>
             <ul class="navbar-nav flex-column">
               <li class="nav-item">
@@ -54,49 +72,90 @@
           </nav>
         </header>
         <div class="col-7 col-sm-9 col-xl-10" id="main-area">
-          <div class="container-fluid">
-            <main class="row" id="formulario">
-              <div class="title">
-                <h2>Dudas</h2>
+          <main class="container-fluid" id="formulario">
+            <div class="title">
+              <h2>Dudas</h2>
+            </div>
+            <form action="">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="name"
+                  type="email"
+                  class="form-control"
+                  placeholder="a@b.cl"
+                />
+                <small id="email" class="form-text text-muted"
+                  >No compartiremos tu email ni te enviaremos spam</small
+                >
               </div>
-              <form action="">
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    id="email"
-                    name="name"
-                    type="email"
-                    class="form-control"
-                    placeholder="a@b.cl"
-                  />
-                  <small id="email" class="form-text text-muted"
-                    >No compartiremos tu email ni te enviaremos spam</small
+              <div class="form-group">
+                <label for="name">Nombre Completo</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  class="form-control"
+                  placeholder="Inserta tu nombre aca"
+                />
+              </div>
+              <div class="form-group">
+                <label for="mesage">Mensaje</label>
+                <textarea
+                  placeholder="Coloca tu mensaje aca, estaremos felices de escuchar de ti"
+                  class="form-control"
+                  id="mesage"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+          </main>
+          <footer class="container-fluid footer">
+            <div class="row">
+              <div class="col" id="contact">
+                <h4>Contacto</h4>
+                <ul>
+                  <li>
+                    <a href="mailto:coordinacion@iptelepresente.cl"
+                      >coordinacion@iptelepresente.cl</a
+                    >
+                  </li>
+                  <li>+56 9 1234 5678</li>
+                  <li>
+                    <a
+                      href="https://www.google.com/maps/place/Duoc+UC:+Antonio+Varas/@-33.4331101,-70.6177538,17z/data=!3m1!4b1!4m5!3m4!1s0x9662cf7b8af466fd:0xc8fd2d768e783103!8m2!3d-33.4331101!4d-70.6155651"
+                      ><p>Antonio Varas 666</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col" id="cert">
+                <h4>Validacion de certificados</h4>
+                <ul>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
                   >
+                    Ingresar certificado
+                  </button>
+                </ul>
+              </div>
+              <div class="col" id="redesSociales">
+                <h4>Redes sociales</h4>
+                <div class="social-links">
+                  <ul>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                  </ul>
                 </div>
-                <div class="form-group">
-                  <label for="name">Nombre Completo</label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    class="form-control"
-                    placeholder="Inserta tu nombre aca"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="mesage">Mensaje</label>
-                  <textarea
-                    placeholder="Coloca tu mensaje aca, estaremos felices de escuchar de ti"
-                    class="form-control"
-                    id="mesage"
-                    rows="3"
-                  ></textarea>
-                </div>
-                <button class="btn btn-primary" type="submit">Enviar</button>
-              </form>
-            </main>
-            <footer class="row"></footer>
-          </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </div>
