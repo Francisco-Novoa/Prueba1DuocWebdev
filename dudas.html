@@ -1,42 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/dudas.css" />
+    <title>Envianos tus dudas!</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-    <title>Document</title>
-</head>
-
-<body>
+  <body>
     <div class="container-fluid" id="main-container">
-        <div class="row">
-            <header id="menu" class="col-2">
-
-            </header>
-            <div class="col-10">
-                <div class="container">
-                    <main class="row">
-
-                    </main>
-                    <footer class="row">
-                        sadfsfd
-                    </footer>
+      <div class="row">
+        <header class="col-5 col-sm-3 col-xl-2">
+          <nav id="menu" class="navbar bg-dark">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="./home.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carreras.html">Nuestras Carreras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="conocenos.html">Conócenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dudas.html">Dudas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="postula.html">Postula Acá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="intranet.html">Acceso a Intranet</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="col-7 col-sm-9 col-xl-10" id="main-area">
+          <div class="container-fluid">
+            <main class="row" id="formulario">
+              <div class="title">
+                <h2>Dudas</h2>
+              </div>
+              <form action="">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="name"
+                    type="email"
+                    class="form-control"
+                    placeholder="a@b.cl"
+                  />
+                  <small id="email" class="form-text text-muted"
+                    >No compartiremos tu email ni te enviaremos spam</small
+                  >
                 </div>
-            </div>
+                <div class="form-group">
+                  <label for="name">Nombre Completo</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="nombre"
+                    class="form-control"
+                    placeholder="Inserta tu nombre aca"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mesage">Mensaje</label>
+                  <textarea
+                    placeholder="Coloca tu mensaje aca, estaremos felices de escuchar de ti"
+                    class="form-control"
+                    id="mesage"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+              </form>
+            </main>
+            <footer class="row"></footer>
+          </div>
         </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
