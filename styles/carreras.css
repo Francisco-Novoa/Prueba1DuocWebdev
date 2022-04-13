@@ -1,0 +1,16 @@
+.titles {
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px;
+  margin-right: 0;
+}
+
+.filters > div {
+  margin: 4px;
+}
