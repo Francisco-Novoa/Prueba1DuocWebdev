@@ -50,10 +50,6 @@ header {
   margin: 8px;
 }
 
-#columna1{
-  background-color: beige;
-}
-
-#publicidad{
-  background-color: blue;
+#carouselExampleControls {
+  margin-top: 32px;
 }
