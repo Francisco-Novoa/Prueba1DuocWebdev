@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./styles/menu.css" />
     <link rel="stylesheet" href="./styles/faq.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="icon" type="image/x-icon" href="./static/images/pngegg.png" />
 
     <title>Preguntas Frecuentes</title>
   </head>
@@ -320,5 +321,53 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Ingresar certificado
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Por favor ingrese el numero de certificado:
+          </div>
+          <div
+            class="container"
+            style="height: 50px; background-color: rgba(255, 255, 255, 0.1)"
+          >
+            <form class="row">
+              <div class="col-auto">
+                <input
+                  type="text"
+                  requiredminlength="8"
+                  size="8"
+                  placeholder="Ej: ABC45678"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Solicitar</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
