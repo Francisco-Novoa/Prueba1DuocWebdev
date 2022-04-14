@@ -203,7 +203,12 @@
                 </div>
               </div>
               <div class="col-2 offset-1">
-                <button type="submit" class="btn btn-primary">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#Postulacion"
+                >
                   Enviar Postulacion.
                 </button>
               </div>
@@ -266,6 +271,7 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+
     <div
       class="modal fade"
       id="exampleModal"
@@ -310,6 +316,34 @@
 
           <div class="modal-footer">
             <button type="submit" class="btn btn-primary">Solicitar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="Postulacion"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="Postulacion"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Envio Aceptado</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Su postulacion sera revisada dentro de 24 horas
           </div>
         </div>
       </div>
