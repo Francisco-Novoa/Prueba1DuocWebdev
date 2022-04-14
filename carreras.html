@@ -1,77 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/carreras.css" />
+    <title>Nuestras Carreras</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/home.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
-    <title>Document</title>
-</head>
-
-<body>
+  <body>
     <div class="container-fluid" id="main-container">
-        <div class="row">
-            <header id="menu" class="col-2">
-
-            </header>
-            <div class="col-10">
-                <div class="container">
-                    <h5>NUESTRAS CARRERAS <h5>
-
-                <div class="container">
-                    <main class="row">
-                        <div class="card" style="width: 15rem;">
-                            <img src="https://album.mediaset.es/eimg/2020/02/12/XBdY9DK8rUS2PXEe5So3m7.jpg?w=1200&h=900" class="card-img-top" alt="https://album.mediaset.es/eimg/2020/02/12/XBdY9DK8rUS2PXEe5So3m7.jpg?w=1200&h=900">
-                            <div class="card-body">
-                              <h5 class="card-title">Bombero</h5>
-                              <p class="card-text">Carrera de Bomberos Para cursar la carrera de bomberos es necesario cumplir con los requisitos básicos exigidos en todas las universidades.</p>
-                              <h5 class="card-title">Requisitos</h5>
-                              <p class="card-text">Tener una edad comprendida entre los 18 y los 40 años, de ser más la edad (60 años), estos deberán tener como mínimo un curso o algún estudio aparte sobre primeros auxilios.</p>
-                              <a href="#" class="btn btn-primary">Descargar malla</a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 15rem;">
-                            <img src="https://universidadmexicana.mx/img/article/carreras-en-linea-en-enfermeria-mexico" class="card-img-top" alt="https://universidadmexicana.mx/img/article/carreras-en-linea-en-enfermeria-mexico">
-                            <div class="card-body">
-                              <h5 class="card-title">Enfermeria</h5>
-                              <p class="card-text">La carrera de enfermería son los estudios para la atención y cuidados de enfermos, heridos y discapacitados siguiendo pautas clínicas y una amplia gama de servicios de salud..</p>
-                              <h5 class="card-title">Requisitos</h5>
-                              <p class="card-text">los requisitos para poder acceder al grado en enfermería son tener aprobado Bachillerato o un ciclo superior de la rama de sanidad, y ya no solo esto sino que por la gran demanda que tiene esta carrera.</p>
-                              <a href="#" class="btn btn-primary">Descargar malla</a>
-                            </div>
-                          </div>
-                          <div class="card" style="width: 15rem;">
-                            <img src="https://encolombia.com/wp-content/uploads/2019/03/Carrera-Dise%C3%B1o-Grafico-Carreras-Profesionales-Educacion.png" class="card-img-top" alt="https://encolombia.com/wp-content/uploads/2019/03/Carrera-Dise%C3%B1o-Grafico-Carreras-Profesionales-Educacion.png">
-                            <div class="card-body">
-                              <h5 class="card-title">Diseño</h5>
-                              <p class="card-text"> La carrera diseño entrega las herramientas y conocimientos fundamentales para ser un profesional con entrenamiento suficiente en las habilidades y destrezas que necesita el profesional para desarrollar su práctica. .</p>
-                              <h5 class="card-title">Requisitos</h5>
-                              <p class="card-text">Es necesario dominaaterias básicas las cuales son las siguientes: Geometría, álgebra básica y álgebra intermedia.</p>
-                              <a href="#" class="btn btn-primary">Descargar malla</a>
-                            </div>
-                          </div>
-                          
-                          
-                        
-                    </main>
-                    <footer class="row">
-                        
-                    </footer>
+      <div class="row">
+        <header class="col-5 col-sm-3 col-xl-2">
+          <nav id="menu" class="navbar bg-dark">
+            <a class="navbar-brand" href="">
+              <img
+                id="logo"
+                src="./static/images/pngegg.png"
+                width="110"
+                height="110"
+                alt=""
+              />
+            </a>
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="./home.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carreras.html">Nuestras Carreras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="conocenos.html">Conócenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Preguntas Frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dudas.html">Dudas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="postula.html">Postula Acá</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="intranet.html">Acceso a Intranet</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="col-7 col-sm-9 col-xl-10" id="main-area">
+          <main class="container-fluid">
+            <div class="row">
+              <div class="col titles">
+                <div class="title">
+                  <h1>Nuestras Carreras Técnicas y Profesionales</h1>
                 </div>
+              </div>
             </div>
+            <div class="row">
+              <div class="col filters">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-primary dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Escuelas
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Asistencia Publica</a>
+                    <a class="dropdown-item" href="#">Heroe de Accion</a>
+                    <a class="dropdown-item" href="#">Ilusionismo</a>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-primary dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sedes
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Estacion Central</a>
+                    <a class="dropdown-item" href="#">La Pintana</a>
+                    <a class="dropdown-item" href="#">Castro</a>
+                    <a class="dropdown-item" href="#">Pelotillehue</a>
+                  </div>
+                </div>
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-primary dropdown-toggle"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Técnicas y Profesionales
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Técnicas</a>
+                    <a class="dropdown-item" href="#">Profesionales</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="row row-cols-1 row-cols-md-2">
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="..." class="card-img-top" alt="..." />
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">
+                          This is a longer card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="container-fluid footer">
+            <div class="row">
+              <div class="col" id="contact">
+                <h4>Contacto</h4>
+                <ul>
+                  <li>
+                    <a href="mailto:coordinacion@iptelepresente.cl"
+                      >coordinacion@iptelepresente.cl</a
+                    >
+                  </li>
+                  <li>+56 9 1234 5678</li>
+                  <li>
+                    <a
+                      href="https://www.google.com/maps/place/Duoc+UC:+Antonio+Varas/@-33.4331101,-70.6177538,17z/data=!3m1!4b1!4m5!3m4!1s0x9662cf7b8af466fd:0xc8fd2d768e783103!8m2!3d-33.4331101!4d-70.6155651"
+                      ><p>Antonio Varas 666</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col" id="cert">
+                <h4>Validacion de certificados</h4>
+                <ul>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                  >
+                    Ingresar certificado
+                  </button>
+                </ul>
+              </div>
+              <div class="col" id="redesSociales">
+                <h4>Redes sociales</h4>
+                <div class="social-links">
+                  <ul>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

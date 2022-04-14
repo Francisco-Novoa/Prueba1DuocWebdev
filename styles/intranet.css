@@ -1,0 +1,37 @@
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+#formulario > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 80%;
+  margin-bottom: 16px;
+}
+
+form > * {
+  padding: 8px;
+  margin: 8px;
+}
+
+.title {
+  padding: 32px;
+  text-align: center;
+}
+
+.encabezado {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

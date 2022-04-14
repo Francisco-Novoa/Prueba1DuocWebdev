@@ -1,0 +1,26 @@
+.title {
+  padding: 32px;
+  text-align: center;
+}
+
+.encabezado {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#accordionWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+}
+
+.accordion {
+  width: 100%;
+}
+
+#accordion > .card {
+  min-width: 100%;
+}

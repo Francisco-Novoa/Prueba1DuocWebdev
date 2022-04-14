@@ -1,0 +1,36 @@
+#about {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.title {
+  margin: 24px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+#portraits {
+  margin: 24px;
+}
+
+#portraits > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalidad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.modo {
+  padding: 16px;
+}
+
+.foto {
+  object-fit: cover;
+  margin: 16px;
+}
