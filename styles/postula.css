@@ -1,0 +1,12 @@
+.title {
+  margin: 16px;
+  text-align: center;
+}
+form {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+form > div {
+  padding: 8px;
+  margin: 8px;
+}
