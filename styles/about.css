@@ -12,6 +12,9 @@
 
 #portraits {
   margin: 24px;
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: darkgrey solid 2px;
 }
 
 #portraits > div {
@@ -34,3 +37,7 @@
   object-fit: cover;
   margin: 16px;
 }
+#avatares {
+  border-radius: 50%;
+}
+

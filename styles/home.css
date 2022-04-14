@@ -14,14 +14,24 @@ body {
 main {
   overflow: hidden;
   height: 100%;
+  border-bottom: black solid 1px;
+
 }
 
-footer {
-  background-color: blanchedalmond;
-}
 
 #main-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#home>.row{
+  width: 100%;
+
+}
+
+.juanito{
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
 }
