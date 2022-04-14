@@ -3,3 +3,18 @@
   margin-bottom: 32px;
   text-align: center;
 }
+.bob {
+  height: 100%;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fotos > div > div {
+  height: 100%;
+}
+
+#fotos > div {
+  height: 100%;
+}
