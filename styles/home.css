@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  
 }
 
 #main-container {
@@ -15,9 +14,7 @@ main {
   overflow: hidden;
   height: 100%;
   border-bottom: black solid 1px;
-
 }
-
 
 #main-area {
   display: flex;
@@ -25,13 +22,16 @@ main {
   justify-content: center;
 }
 
-#home>.row{
+#home > .row {
   width: 100%;
-
 }
 
-.juanito{
+.juanito {
   display: flex;
   align-items: center;
   margin-left: 8px;
+}
+
+#acc {
+  margin-bottom: 24px;
 }
